@@ -34,3 +34,13 @@ main
     color: white;
     font-weight: bolder;
 }
+
+/*Medias Query*/
+@media (max-width: 576px) {
+  .img-carrusel{
+    height: 400px;           /* ajusta a tu gusto */
+    object-fit: cover;       /* recorta la imagen sin deformarla */
+    object-position: center; /* centra la imagen */
+  }
+}
+
