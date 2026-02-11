@@ -64,3 +64,10 @@ main
     display: inline-block;
     padding-bottom: 5px;
 }
+
+.comentario-card {
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
