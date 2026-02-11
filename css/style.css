@@ -11,3 +11,11 @@ main
 .navbar-color{
     background-color: orangered;
 }
+
+.nav-links-color{
+    color: white;
+}
+
+.nav-links-color:hover{
+    color: black;
+}
