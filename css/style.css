@@ -52,13 +52,15 @@ main
     font-weight: 700;
 }
 
-.precio {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
 .plataforma {
     background-color: black;
     color: white;
     margin-right: 5px;
+}
+
+.seccion-titulo {
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 2px solid orangered;
+    display: inline-block;
+    padding-bottom: 5px;
 }
