@@ -19,3 +19,14 @@ main
 .nav-links-color:hover{
     color: black;
 }
+
+.btn-buscar {
+    transition: 0.3s ease;
+}
+
+.btn-buscar:hover {
+    box-shadow: 0 0 10px #ffae00,
+                0 0 20px #ffae00;
+    transform: scale(1.05);
+    color: orangered;
+}
