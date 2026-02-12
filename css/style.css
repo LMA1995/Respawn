@@ -8,24 +8,15 @@ main
     flex-grow: 1;
    
 }
-.fondo-respawn {
-  background-image: url("../img/fondo.png");
-  background-size: cover;        /* ocupa todo el espacio */
-  background-position: center;   /* centra la imagen */
-  background-repeat: no-repeat;
-  min-height: 90vh;              /* alto de pantalla */
-  position: relative;
+
+
+.carousel-item img{
+  height: 600px;   
+  width: 100%;      
+  object-fit: cover;
+  object-position: center 20%;
 }
-.fondo-respawn-overlay {
-  background: rgba(0,0,0,0.6); /* capa oscura */
-  min-height: 90vh;
-}
-.img-carrusel
-{
-    height: 550px;
-    width: 100%;
-    object-fit: cover;
-}
+
 .info-carrusel
 {
     background: rgba(0, 0, 0, 0.5);
