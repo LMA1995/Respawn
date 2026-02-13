@@ -36,6 +36,21 @@ main
     transition: 0.3s ease;
 }
 
+.btn-volver{
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
 .btn-comprar:hover {
     background-color: #ff5722;
     box-shadow: 0 0 15px orangered;
