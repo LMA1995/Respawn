@@ -8,6 +8,35 @@ body{
 main
 {
     flex-grow: 1;
+   
+}
+
+
+.carousel-item img{
+  height: 600px;   
+  width: 100%;      
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.info-carrusel
+{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+/*Medias Query*/
+@media (max-width: 576px) {
+  .img-carrusel{
+    height: 400px;         
+    object-fit: cover;       
+    object-position: center; 
+  }
+}
+
 }
 
 .imagen-container {
