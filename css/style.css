@@ -30,3 +30,7 @@ main
     transform: scale(1.05);
     color: orangered;
 }
+
+.login-img{
+    object-fit: cover;
+}
