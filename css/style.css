@@ -34,3 +34,12 @@ main
 .login-img{
     object-fit: cover;
 }
+
+.btn-ingresar-login{
+    background-color: orangered;
+}
+
+.btn-ingresar-login:hover{
+    background-color: #ffae00;
+    color: black;
+}
