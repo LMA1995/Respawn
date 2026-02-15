@@ -37,7 +37,6 @@ main
   }
 }
 
-}
 
 .imagen-container {
     position: relative;
@@ -138,3 +137,23 @@ main
     transform: scale(1.05);
     color: orangered;
 }
+
+.login-img{
+    object-fit: cover;
+
+}
+
+.btn-ingresar-login{
+    background-color: orangered;
+}
+
+.btn-ingresar-login:hover{
+    background-color: #ffae00;
+    color: black;
+}
+
+.form-control:focus {
+  border-color: orangered; 
+  box-shadow: 0 0 0 0.25rem rgba(255, 122, 0, 0.25);
+}
+
