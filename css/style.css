@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body{
     height: 100vh;
@@ -184,6 +186,13 @@ main
     }
 }
 /*Clases seccion Principal*/
+h1, h2, h3, h4,h5, h6{
+   font-family:  'Roboto', sans-serif;
+}
+p, label, span
+{
+    font-family: 'Roboto', sans-serif;;
+}
 .contenedor-seccion-principal
 {
     
@@ -205,6 +214,11 @@ main
   display: inline-block;
   padding-bottom: 5px;
   justify-content: center;
+  font-family:'Roboto', sans-serif;
+}
+.texto-principal
+{
+    font-family: 'Roboto', sans-serif;
 }
 .publicidad{
   position: sticky;
@@ -229,6 +243,27 @@ main
   background-size: 100% 100%;   
   background-position: center;
   background-repeat: no-repeat;
+}
+.categoria-terror
+{
+    background-color: #ff4500;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.categoria-shooter
+{
+     background-color: rgba(219, 13, 13, 0.781);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.categoria-aventura
+{
+     background-color: rgba(17, 112, 4, 0.781);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* celulares */
