@@ -265,6 +265,39 @@ p, label, span
     border-radius: 5px;
     padding: 5px;
 }
+.categoria-deporte
+{
+     background-color: rgba(11, 4, 112, 0.781);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.categoria-combate
+{
+     background-color: rgb(240, 6, 6);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.contenedor-oferta
+{
+    
+    font-size: 25px;
+    
+    box-sizing: border-box;
+
+}
+.descuento
+{
+    background-color: rgb(64, 255, 47);
+    color: black;
+    padding: 5px;
+}
+.precio
+{
+    background-color: gray;
+    padding: 5px;
+}
 
 /* celulares */
 @media (max-width: 576px){
