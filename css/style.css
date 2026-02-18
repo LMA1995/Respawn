@@ -183,6 +183,53 @@ main
         font-size: 25px;
     }
 }
+/*Clases seccion Principal*/
+.contenedor-seccion-principal
+{
+    
+  background-color: #1e1e1e;   
+  color: white;                
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid orangered; 
+  box-shadow: 0 0 15px orangered;
+  text-align: center;
+}
+
+
+
+.titulo-principal
+{
+
+  border-bottom: 3px solid #ff4500;
+  display: inline-block;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+.publicidad{
+  position: sticky;
+  top: 120px;
+  background:#1e1e1e;
+  color:white;
+  border-radius:10px;
+  height:500px;
+  background-image: url("../img/publicidad1.png");
+  background-size: 100% 100%;   
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.publicidad2{
+  position: sticky;
+  top: 120px;
+  background:#1e1e1e;
+  color:white;
+  border-radius:10px;
+  height:500px;
+  background-image: url("../img/publicidad2.png");
+  background-size: 100% 100%;   
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* celulares */
 @media (max-width: 576px){
