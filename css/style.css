@@ -298,6 +298,22 @@ p, label, span
     background-color: gray;
     padding: 5px;
 }
+.seccion-ofertas
+{
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    padding: 8px;
+}
+.oferta{
+    color: orangered;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.precio-anterior
+{
+    color: gray;
+}
 
 /* celulares */
 @media (max-width: 576px){
