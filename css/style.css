@@ -9,8 +9,3 @@ main
 }
 
 .Footer {background-color: #333; color: white; padding: 20px 0; font-size: 14px;}
-.Box {max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
-.Contacto {flex: 1; margin-right: 20px;}
-.Redes{ flex: 1; text-align: center;}
-.Mapa {flex: 1; margin-right: 20px;}
-.Direciones {flex: 1; margin-right: 20px;}
