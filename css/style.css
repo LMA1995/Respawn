@@ -325,7 +325,7 @@ p, label, span
     border-radius: 8px;
     font-size: 20px;
     padding: 5px;
-    width: 150px;
+    width: auto;
 }
 h2, h3 {
   font-weight: 700;
