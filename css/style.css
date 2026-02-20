@@ -397,6 +397,26 @@ h2, h3 {
     box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
     }
 
+/*Clases pagina carrito*/
+.btn-quitar
+{
+    color: white;
+    text-align: center;
+}
+.btn-quitar:hover
+{
+    font-size: 30px;
+    color: red;
+}
+.contenedor-tabla
+{
+    border-radius: 5px;
+    border-style: solid 1px gray;
+}
+.bg-encabezado-grilla th
+{
+    background-color: orangered;
+}
 /* celulares */
 @media (max-width: 576px){
     .carousel-item
@@ -415,7 +435,19 @@ h2, h3 {
   {
     font-size: 20px;
   }
+  .btn-quitar{
+    color: red;
+  }
+  .table tbody td
+  {
+    font-size: 15px;
+  }
+  .table thead th
+  {
+    font-size: 15px;
+  }
 }
+
 /*Tablets */
 @media (max-width: 992px)
 {
@@ -425,6 +457,16 @@ h2, h3 {
 }
 p{
  font-size: 23px
-};
+}
+.btn-quitar
+{
+    color: red;
+}
+td, th
+{
+    font-size: 20px;
+}
+.btn
+{font-size: 20px;}
 }
 
