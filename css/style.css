@@ -407,7 +407,16 @@ h2, h3 {
   .btn-quitar{
     color: red;
   }
+  .table tbody td
+  {
+    font-size: 15px;
+  }
+  .table thead th
+  {
+    font-size: 15px;
+  }
 }
+
 /*Tablets */
 @media (max-width: 992px)
 {
@@ -422,5 +431,11 @@ p{
 {
     color: red;
 }
+td, th
+{
+    font-size: 20px;
+}
+.btn
+{font-size: 20px;}
 }
 
