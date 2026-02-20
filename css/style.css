@@ -387,6 +387,10 @@ h2, h3 {
     color: white;
     }
 
+.formulario-registrarse{
+    max-width: 60%;
+    margin: auto;
+}
 
 .form-control:focus {
     border-color: #ff6a00;
