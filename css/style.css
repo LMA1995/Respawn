@@ -420,6 +420,41 @@ h2, h3 {
   object-fit: cover;    
 }
 
+.precio-badge{
+    background-color: transparent;
+  color: #ff6a00;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.page-link:hover {
+  background-color: #ff6a00;
+  color: white;
+}
+.pagination .page-link {
+  background-color: #1e1e1e;
+  color: #ff6a00;
+  border: 1px solid #333;
+}
+
+.pagination .page-link:hover {
+  background-color: #ff6a00;
+  color: #fff;
+  border-color: #ff6a00;
+}
+
+
+.pagination .page-item.active .page-link {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+  color: #fff;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+
 
 
 /* celulares */
