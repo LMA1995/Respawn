@@ -377,7 +377,7 @@ h2, h3 {
 }
 
 .btn-registrar {
-    background-color: #ff6a00;
+    background-color: orangered;
     color: white;
     font-family: 'Orbitron', sans-serif;
     }
@@ -386,6 +386,7 @@ h2, h3 {
     background-color: #ff8533;
     color: white;
     }
+
 
 .form-control:focus {
     border-color: #ff6a00;
