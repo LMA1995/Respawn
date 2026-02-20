@@ -415,6 +415,11 @@ h2, h3 {
         0 0 15px orangered;
 }
 
+.img-card {
+  height: 300px;        
+  object-fit: cover;    
+}
+
 
 
 /* celulares */
