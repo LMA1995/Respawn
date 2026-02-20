@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Carrito de compras del sitio Respawn "
-    />
+    <meta name="description" content="Carrito de compras del sitio Respawn " />
     <meta
       name="author"
       content="Luis Altamiranda, Fatima Alfaro,Dante Herrera"
@@ -17,14 +14,210 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Carrito 🛒 </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Carrito 🛒</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-color">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Respawn</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-links-color"
+                  aria-current="page"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >Iniciar sesión</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-links-color" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-links-color" href="#">Nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar videojuegos..."
+                aria-label="Search"
+              />
+              <button class="btn btn-dark btn-buscar" type="submit">
+                Buscar
+              </button>
+            </form>
+            <a
+              href="#"
+              class="nav-links-color fs-4 ms-lg-3 mt-md-4 mt-sm-4 mt-lg-0"
+            >
+              <i class="bi bi-cart3"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container mt-5">
+        <h1 class="titulos">Tu Carrito <i class="bi bi-cart-fill"></i></h1>
+        <div class="row contenedor-tabla">
+            <div class="col-12 col-lg-8">
+                  <table class="table ">
+            <thead class="bg-encabezado-grilla">
+              <tr class="bg-encabezado-grilla">
+                <th scope="col" class="bg-encabezado-grilla">#</th>
+                <th scope="col" class="bg-encabezado-grilla">Nombre Juego</th>
+                <th scope="col" class="bg-encabezado-grilla">Precio</th>
+                <th scope="col" class="bg-encabezado-grilla text-center">Quitar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doom</td>
+                <td>$25.000</td>
+                <td class="text-center">
+                  <i class="bi bi-trash3-fill btn-quitar"></i>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>God Of War</td>
+                <td>$25.000</td>
+                <td class="text-center">
+                  <i class="bi bi-trash3-fill btn-quitar"></i>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>E football</td>
+                <td>$35.99</td>
+                <td class="text-center">
+                  <i class="bi bi-trash3-fill btn-quitar"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+            </div>
+         
+          <div class="col-12 col-lg-4">
+             <div class=" p-3">
+      <h5>Resumen</h5>
+      <p>Subtotal: $85.999</p>
+      <p>Total: $85.999</p>
+      
+      <div class="d-flex">
+      <button type="button" class="btn btn-danger w-50 m-1"><a href="../index.html" class="nav-link">Volver atras</a></button>
+       <button class="btn btn-success w-50 m-1"><a href="../pages/error404.html" class="nav-link">Finalizar compra</a>
+        
+      </button>
+
+      </div>
+      
+     
+    </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <!-- Imagen izquierda -->
+              <div class="col-md-6 d-none d-md-block">
+                <img
+                  src="../img/imagen login.png"
+                  alt="Login"
+                  class="img-fluid h-100 login-img"
+                />
+              </div>
+
+              <!-- Formulario -->
+              <div class="col-md-6 p-4">
+                <h4 class="mb-3 text-center">Iniciar Sesión</h4>
+
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Correo electrónico</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      required
+                      placeholder="Ingresa tu correo electronico"
+                      maxlength="100"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      required
+                      placeholder="Ingresa tu contraseña"
+                      minlength="8"
+                      maxlength="12"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-ingresar-login w-100 mb-3"
+                  >
+                    Ingresar
+                  </button>
+
+                  <div class="text-center mb-3">
+                    <p class="small">Iniciar sesión con</p>
+                    <button type="button" class="btn btn-outline-danger me-2">
+                      Google
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                      Facebook
+                    </button>
+                  </div>
+
+                  <div class="text-center mt-3">
+                    <p class="small">
+                      ¿No tienes cuenta?
+                      <a href="#">Regístrate</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
