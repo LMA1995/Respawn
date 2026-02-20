@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body{
     height: 100vh;
@@ -183,22 +185,167 @@ main
         font-size: 25px;
     }
 }
-
-/* celulares */
-@media (max-width: 576px){
-    .carousel-item
-    {
-     height: 380px;
-    }
-
-    .carousel-item img{
-        height: 330px;
-        object-position: 80% center;
-    }
-   .carousel-item img.carousel-item-rivals{
-      object-position:5% center;
-  }
+/*Clases seccion Principal*/
+h1, h2, h3, h4,h5, h6{
+   font-family:  'Roboto', sans-serif;
 }
+p, label, span
+{
+    font-family: 'Roboto', sans-serif;;
+}
+.contenedor-seccion-principal
+{
+    
+  background-color: #1e1e1e;   
+  color: white;                
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid orangered; 
+  box-shadow: 0 0 15px orangered;
+  text-align: center;
+}
+
+
+
+.titulo-principal
+{
+
+  border-bottom: 3px solid #ff4500;
+  display: inline-block;
+  padding-bottom: 5px;
+  justify-content: center;
+  font-family:'Roboto', sans-serif;
+}
+.texto-principal
+{
+    font-family: 'Roboto', sans-serif;
+}
+.publicidad{
+  position: sticky;
+  top: 120px;
+  background:#1e1e1e;
+  color:white;
+  border-radius:10px;
+  height:500px;
+  background-image: url("../img/publicidad1.png");
+  background-size: 100% 100%;   
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.publicidad2{
+  position: sticky;
+  top: 120px;
+  background:#1e1e1e;
+  color:white;
+  border-radius:10px;
+  height:500px;
+  background-image: url("../img/publicidad2.png");
+  background-size: 100% 100%;   
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.categoria-terror
+{
+    background-color: #ff4500;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.categoria-shooter
+{
+     background-color: rgba(219, 13, 13, 0.781);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.categoria-aventura
+{
+     background-color: rgba(17, 112, 4, 0.781);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.categoria-deporte
+{
+     background-color: rgba(11, 4, 112, 0.781);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.categoria-combate
+{
+     background-color: rgb(240, 6, 6);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.contenedor-oferta
+{
+    
+    font-size: 25px;
+    
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+.descuento
+{   
+     background: rgba(241, 99, 4, 0.986);
+    
+    color: black;
+    padding: 5px;
+    
+}
+.precio
+{
+    background-color: gray;
+    padding: 5px;
+}
+.seccion-ofertas
+{
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    padding: 8px;
+}
+.oferta{
+    color: orangered;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.precio-anterior
+{
+    color: gray;
+}
+.btn-carrito
+{
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 5px;
+    width: auto;
+}
+h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.titulos
+{
+     color: orangered;
+  text-shadow: 0 0 12px rgba(250, 139, 139, 0.938);
+  text-align: center;
+  font-size: 30px;
+}
+
+.seccion-ofertas h2 {
+  color: #a78bfa;
+  text-shadow: 0 0 12px rgba(167,139,250,.5);
+}
+
+
+
 
 .login-img{
     object-fit: cover;
@@ -217,5 +364,35 @@ main
 .form-control:focus {
   border-color: orangered; 
   box-shadow: 0 0 0 0.25rem rgba(255, 122, 0, 0.25);
+}
+/* celulares */
+@media (max-width: 576px){
+    .carousel-item
+    {
+     height: 380px;
+    }
+
+    .carousel-item img{
+        height: 330px;
+        object-position: 80% center;
+    }
+   .carousel-item img.carousel-item-rivals{
+      object-position:5% center;
+  }
+  .card-text
+  {
+    font-size: 20px;
+  }
+}
+/*Tablets */
+@media (max-width: 992px)
+{
+.card-text
+{
+    font-size: 23px;
+}
+p{
+ font-size: 23px
+};
 }
 
