@@ -368,23 +368,28 @@ h2, h3 {
 
 .titulo-registrarse{
     font-family: 'Orbitron', sans-serif;
-      color: #ff6a00;
+    color: #ff6a00;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff6a00,
+        0 0 40px #ff6a00;
 }
 
 .btn-registrar {
-      background-color: #ff6a00;
-      color: white;
-      font-family: 'Orbitron', sans-serif;
+    background-color: #ff6a00;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
     }
 
 .btn-registrar:hover {
-      background-color: #ff8533;
-      color: white;
+    background-color: #ff8533;
+    color: white;
     }
 
 .form-control:focus {
-      border-color: #ff6a00;
-      box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
     }
 
 /* celulares */
