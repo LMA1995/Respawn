@@ -419,6 +419,18 @@ h2, h3 {
         0 0 15px orangered;
 }
 
+.img-card {
+  height: 300px;        
+  object-fit: cover;    
+}
+
+.precio-badge{
+  color: #ff6a00;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+}
+
 
 /* celulares */
 @media (max-width: 576px){
