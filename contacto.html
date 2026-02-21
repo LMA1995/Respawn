@@ -29,43 +29,62 @@
   <body>
     <header></header>
     <main>
-        <br>
-        <div class="container">
-  <div class="row ">
-    <div class="col-"> <h1 class="text-center">Contactanos</h1>
-        <form action="">
-<div class="mb-3"></div>
-<label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" maxlength="25" required="#" placeholder="Ej:Eduardo ">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email </label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" maxlength="25" required="#" placeholder="*************">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" maxlength="200" required="#"></textarea>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-outline-primary" type="button"><a" href="" >Enviar</a></button>
-        </div>
+      <div class="container py-5">
+
+  <h2 class="text-center mb-5 fw-bold">Contacto</h2>
+
+  <div class="row g-4">
+
+    <!-- MAPA -->
+    <div class="col-12 col-lg-6">
+      <div class="ratio ratio-4x3 rounded overflow-hidden shadow">
+        <iframe 
+          src="https://www.google.com/maps?q=San+Miguel+de+Tucumán,+Argentina&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="col-12 col-lg-6">
+      <div class="card shadow">
+        <div class="card-body p-4">
+
+          <form>
+
+            <div class="mb-3">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Asunto</label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-danger w-100">
+              Enviar Consulta
+            </button>
+
           </form>
-          </div>
-            
+
+        </div>
+      </div>
     </div>
-    <div class="col">
-        <h2 class="text-center">Visitanos
-        </h2>
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5522.018000078685!2d-68.331483382907!3d-34.619038828817544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96790796fca03d1d%3A0xd6d5a3c765db1fd4!2sHostel%20quinto%20elemento!5e0!3m2!1ses-419!2sar!4v1692191689779!5m2!1ses-419!2sar"
-        width="450"
-        height="305"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
+
+  </div>
+
 </div>
     </main>
   </body>
