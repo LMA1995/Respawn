@@ -431,6 +431,33 @@ h2, h3 {
   padding: 0;
 }
 
+.page-link:hover {
+  background-color: #ff6a00;
+  color: white;
+}
+.pagination .page-link {
+  background-color: #1e1e1e;
+  color: #ff6a00;
+  border: 1px solid #333;
+}
+
+.pagination .page-link:hover {
+  background-color: #ff6a00;
+  color: #fff;
+  border-color: #ff6a00;
+}
+
+
+.pagination .page-item.active .page-link {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+  color: #fff;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+
 
 /* celulares */
 @media (max-width: 576px){
