@@ -78,69 +78,117 @@
       </nav>
     </header>
     <main>
-      <section class="container mt-5">
+      <section class="container my-5">
         <h1 class="titulos mb-3">Tu Carrito <i class="bi bi-cart-fill"></i></h1>
         <div class="row contenedor-tabla">
-            <div class="col-12 col-lg-8">
-                  <table class="table ">
-            <thead class="bg-encabezado-grilla">
-              <tr class="bg-encabezado-grilla">
-                <th scope="col" class="bg-encabezado-grilla">#</th>
-                <th scope="col" class="bg-encabezado-grilla">Nombre Juego</th>
-                <th scope="col" class="bg-encabezado-grilla">Precio</th>
-                <th scope="col" class="bg-encabezado-grilla text-center">Quitar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Doom</td>
-                <td>$25.000</td>
-                <td class="text-center">
-                  <i class="bi bi-trash3-fill btn-quitar"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>God Of War</td>
-                <td>$25.000</td>
-                <td class="text-center">
-                  <i class="bi bi-trash3-fill btn-quitar"></i>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>E football</td>
-                <td>$35.99</td>
-                <td class="text-center">
-                  <i class="bi bi-trash3-fill btn-quitar"></i>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-            </div>
-         
-          <div class="col-12 col-lg-4">
-             <div class=" p-3">
-      <h5>Resumen</h5>
-      <p>Subtotal: $85.999</p>
-      <p>Total: $85.999</p>
-      
-      <div class="d-flex">
-      <button type="button" class="btn btn-danger w-50 m-1"><a href="../index.html" class="nav-link">Volver atras</a></button>
-       <button class="btn btn-success w-50 m-1"><a href="../pages/error404.html" class="nav-link">Finalizar compra</a>
-        
-      </button>
+          <div class="col-12 col-lg-8">
+            <table class="table">
+              <thead class="bg-encabezado-grilla">
+                <tr class="bg-encabezado-grilla">
+                  <th scope="col" class="bg-encabezado-grilla">#</th>
+                  <th scope="col" class="bg-encabezado-grilla">Nombre Juego</th>
+                  <th scope="col" class="bg-encabezado-grilla">Precio</th>
+                  <th scope="col" class="bg-encabezado-grilla text-center">
+                    Quitar
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Doom</td>
+                  <td>$25.000</td>
+                  <td class="text-center">
+                    <i class="bi bi-trash3-fill btn-quitar"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>God Of War</td>
+                  <td>$25.000</td>
+                  <td class="text-center">
+                    <i class="bi bi-trash3-fill btn-quitar"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>E football</td>
+                  <td>$35.99</td>
+                  <td class="text-center">
+                    <i class="bi bi-trash3-fill btn-quitar"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-      </div>
-      
-     
-    </div>
+          <div class="col-12 col-lg-4">
+            <div class="p-3">
+              <h5>Resumen</h5>
+              <p>Subtotal: $85.999</p>
+              <p>Total: $85.999</p>
+
+              <div class="d-flex">
+                <button type="button" class="btn btn-danger w-50 m-1">
+                  <a href="../index.html" class="nav-link">Volver atras</a>
+                </button>
+                <button class="btn btn-success w-50 m-1">
+                  <a href="../pages/error404.html" class="nav-link"
+                    >Finalizar compra</a
+                  >
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <h2 class="fw-bold">RESPAWN</h2>
+            <p>
+              Tu tienda gamer de confianza.<br />
+              Consolas, juegos y accesorios al mejor precio.
+            </p>
+
+            <ul class="list-unstyled">
+              <li><a href="#">Categorías</a></li>
+              <li><a href="#">Quiénes Somos</a></li>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider">
+            <h4 class="text-center">Seguinos</h4>
+            <div class="social-icons text-center">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter-x"></i>
+            </div>
+          </div>
+
+          <!-- Columna 3 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider text-center">
+            <h4>Contacto</h4>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i>San Miguel de Tucumán,
+              Argentina
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i>+54 381 000 0000</p>
+            <p><i class="bi bi-envelope-fill me-2"></i>contacto@respawn.com</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Respawn - Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
     <!-- Modal Login -->
     <div class="modal fade" id="loginModal" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">

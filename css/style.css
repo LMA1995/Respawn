@@ -527,7 +527,7 @@ h2, h3 {
 .footer {
       background-color:orangered;
       color: white;
-      padding: 60px 0 20px;
+      padding: 15px;
     }
 
     .footer h4 {
@@ -561,8 +561,6 @@ h2, h3 {
 
     .footer-bottom {
       border-top: 1px solid rgba(255,255,255,0.3);
-      margin-top: 40px;
-      padding-top: 15px;
       text-align: center;
       font-size: 14px;
     }

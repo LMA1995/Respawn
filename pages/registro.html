@@ -84,56 +84,148 @@
     </header>
 
     <main>
-        <div class="container my-5">
-            <h1 class="text-center mb-5 titulo-registrarse "> Registrate y empeza tu aventura 🎮</h1>
-            <form class="formulario-registrarse">
-                 <div class="mb-3">
-              <label class="form-label text-light">Nombre y Apellido</label>
-              <input type="text" class="form-control" placeholder="Ej: Pedro López" minlength="3" maxlength="50" required>
+      <div class="container my-5">
+        <h1 class="text-center mb-5 titulo-registrarse">
+          Registrate y empeza tu aventura 🎮
+        </h1>
+        <form class="formulario-registrarse">
+          <div class="mb-3">
+            <label class="form-label text-light">Nombre y Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ej: Pedro López"
+              minlength="3"
+              maxlength="50"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label text-light">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Ej: pedrolopez@gmail.com"
+              minlength="10"
+              maxlength="60"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label text-light">Teléfono</label>
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="Ej: 3811234567"
+                minlength="8"
+                maxlength="15"
+              />
             </div>
 
-            <div class="mb-3">
-              <label class="form-label text-light">Email</label>
-              <input type="email" class="form-control" placeholder="Ej: pedrolopez@gmail.com" minlength="10" maxlength="60" required>
+            <div class="col-md-6 mb-3">
+              <label class="form-label text-light">Código Postal</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ej: 4000"
+                minlength="4"
+                maxlength="10"
+                required
+              />
             </div>
+          </div>
 
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label class="form-label text-light">Teléfono</label>
-                <input type="tel" class="form-control" placeholder="Ej: 3811234567" minlength="8" maxlength="15">
-              </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Domicilio</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ej: 24 de septiembre 742"
+              minlength="5"
+              maxlength="100"
+            />
+          </div>
 
-              <div class="col-md-6 mb-3">
-                <label class="form-label text-light">Código Postal</label>
-                <input type="text" class="form-control" placeholder="Ej: 4000" minlength="4" maxlength="10" required>
-              </div>
-            </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Nombre de Usuario</label>
+            <input
+              type="text"
+              class="form-control"
+              required
+              minlength="4"
+              maxlength="20"
+              placeholder="Ej: gamer123"
+              required
+            />
+          </div>
 
-            <div class="mb-3">
-              <label class="form-label text-light">Domicilio</label>
-              <input type="text" class="form-control" placeholder="Ej: 24 de septiembre 742" minlength="5" maxlength="100">
-            </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Ingresa como minimo 8 caracteres"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+          </div>
 
-            <div class="mb-3">
-              <label class="form-label text-light">Nombre de Usuario</label>
-              <input type="text" class="form-control" required minlength="4" maxlength="20" placeholder="Ej: gamer123" required>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label text-light">Contraseña</label>
-              <input type="password" class="form-control" placeholder="Ingresa como minimo 8 caracteres" minlength="8" maxlength="20" required>
-            </div>
-
-            <button type="submit" class="btn btn-registrar w-100">
-              Registrarme
-            </button>
-
-            </form>
-
-        </div>
+          <button type="submit" class="btn btn-registrar w-100">
+            Registrarme
+          </button>
+        </form>
+      </div>
     </main>
-    
-    <footer></footer>
+    <footer class="footer mt-3">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <h2 class="fw-bold">RESPAWN</h2>
+            <p>
+              Tu tienda gamer de confianza.<br />
+              Consolas, juegos y accesorios al mejor precio.
+            </p>
+
+            <ul class="list-unstyled">
+              <li><a href="#">Categorías</a></li>
+              <li><a href="#">Quiénes Somos</a></li>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider">
+            <h4 class="text-center">Seguinos</h4>
+            <div class="social-icons text-center">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter-x"></i>
+            </div>
+          </div>
+
+          <!-- Columna 3 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider text-center">
+            <h4>Contacto</h4>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i>San Miguel de Tucumán,
+              Argentina
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i>+54 381 000 0000</p>
+            <p><i class="bi bi-envelope-fill me-2"></i>contacto@respawn.com</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Respawn - Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
     <!-- Modal Login -->
     <div class="modal fade" id="loginModal" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
