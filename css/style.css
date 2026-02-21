@@ -374,6 +374,9 @@ h2, h3 {
     height: 200%;
     transform: translate(-50%, -50%);
    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .contenedor-video{
@@ -381,6 +384,8 @@ h2, h3 {
    width: 100%;
    height: 60vh;
    overflow: hidden;
+    width: 100%;
+    height: 60vh;
 }
 
 .contenido-video{
@@ -395,6 +400,7 @@ h2, h3 {
 .contenido-video h1{
     font-family: 'Orbitron', sans-serif;
     font-size: 45px;
+    font-size: 64px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -413,6 +419,10 @@ h2, h3 {
     font-size: 25px;
     font-weight: 600;
     color: orangered;
+    font-size: 32px;
+    font-weight: 600;
+    color: orangered;
+    letter-spacing: 3px;
 
     text-shadow:
         0 0 5px #ffffff,
@@ -427,6 +437,9 @@ h2, h3 {
 .precio-badge{
   color: #ff6a00;
   font-size: 18px;
+    background-color: transparent;
+  color: #ff6a00;
+  font-size: 1.2rem;
   font-weight: 700;
   padding: 0;
 }
@@ -459,6 +472,58 @@ h2, h3 {
 }
 
 
+
+.titulo-registrarse{
+    font-family: 'Orbitron', sans-serif;
+    color: #ff6a00;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff6a00,
+        0 0 40px #ff6a00;
+}
+
+.btn-registrar {
+    background-color: orangered;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    }
+
+.btn-registrar:hover {
+    background-color: #ff8533;
+    color: white;
+    }
+
+.formulario-registrarse{
+    max-width: 60%;
+    margin: auto;
+}
+
+.form-control:focus {
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
+    }
+
+/*Clases pagina carrito*/
+.btn-quitar
+{
+    color: white;
+    text-align: center;
+}
+.btn-quitar:hover
+{
+    font-size: 30px;
+    color: red;
+}
+.contenedor-tabla
+{
+    border-radius: 5px;
+    border-style: solid 1px gray;
+}
+.bg-encabezado-grilla th
+{
+    background-color: orangered;
+}
 /* celulares */
 @media (max-width: 576px){
     .carousel-item
@@ -477,7 +542,19 @@ h2, h3 {
   {
     font-size: 20px;
   }
+  .btn-quitar{
+    color: red;
+  }
+  .table tbody td
+  {
+    font-size: 15px;
+  }
+  .table thead th
+  {
+    font-size: 15px;
+  }
 }
+
 /*Tablets */
 @media (max-width: 992px)
 {
@@ -487,6 +564,16 @@ h2, h3 {
 }
 p{
  font-size: 23px
-};
+}
+.btn-quitar
+{
+    color: red;
+}
+td, th
+{
+    font-size: 20px;
+}
+.btn
+{font-size: 20px;}
 }
 
