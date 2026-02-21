@@ -14,3 +14,7 @@ Redes {a {
     text-decoration: none; /* Quita el subrayado */
     color: aliceblue;         /* Cambia el color azul a  */
 }}
+a{
+    text-decoration: none;
+    color: white;
+   }
