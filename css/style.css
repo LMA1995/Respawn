@@ -8,4 +8,9 @@ main
     flex-grow: 1;
 }
 
-.Footer {background-color: #333; color: white; padding: 20px 0; font-size: 14px;}
+Footer {background-color:orangered}
+
+Redes {a {
+    text-decoration: none; /* Quita el subrayado */
+    color: aliceblue;         /* Cambia el color azul a  */
+}}
