@@ -42,10 +42,6 @@ main
 }
 
 
-
-
-
-
 .imagen-container {
     position: relative;
     display: inline-block; 
@@ -146,24 +142,7 @@ main
     color: orangered;
 }
 
-.btn-volver {
-    transition: 0.3s ease;
-    background-color: orangered;
-    border-radius: 8px;
-    color: white;
-    font-weight: bolder;
-    border-style: none;
-    padding: 8px;
 
-}
-
-.btn-volver:hover {
-    box-shadow: 0 0 10px #ffae00,
-                0 0 20px #ffae00;
-    transform: scale(1.05);
-    color: black;
-
-}
 @media (max-width: 992px){
     .carousel-item{
         height: 560px;
@@ -378,6 +357,171 @@ h2, h3 {
 {
     color: orangered;
     font-family: 'roboto', sans-serif;
+
+.video-categoria{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    transform: translate(-50%, -50%);
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor-video{
+   position: relative;
+   width: 100%;
+   height: 60vh;
+   overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.contenido-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+.contenido-video h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 45px;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+
+    text-shadow:
+        0 0 8px orangered,
+        0 0 20px orangered,
+        0 0 40px #ff4500;
+
+    margin-bottom: 25px;
+}
+
+.contenido-video p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: orangered;
+    font-size: 32px;
+    font-weight: 600;
+    color: orangered;
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 15px orangered;
+}
+
+.img-card {
+  height: 300px;        
+  object-fit: cover;    
+}
+
+.precio-badge{
+  color: #ff6a00;
+  font-size: 18px;
+    background-color: transparent;
+  color: #ff6a00;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.page-link:hover {
+  background-color: #ff6a00;
+  color: white;
+}
+.pagination .page-link {
+  background-color: #1e1e1e;
+  color: #ff6a00;
+  border: 1px solid #333;
+}
+
+.pagination .page-link:hover {
+  background-color: #ff6a00;
+  color: #fff;
+  border-color: #ff6a00;
+}
+
+
+.pagination .page-item.active .page-link {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+  color: #fff;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+
+
+
+.titulo-registrarse{
+    font-family: 'Orbitron', sans-serif;
+    color: #ff6a00;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff6a00,
+        0 0 40px #ff6a00;
+}
+
+.btn-registrar {
+    background-color: orangered;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    }
+
+.btn-registrar:hover {
+    background-color: #ff8533;
+    color: white;
+    }
+
+.formulario-registrarse{
+    max-width: 60%;
+    margin: auto;
+}
+
+.form-control:focus {
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
+    }
+
+/*Clases pagina carrito*/
+.btn-quitar
+{
+    color: white;
+    text-align: center;
+}
+.btn-quitar:hover
+{
+    font-size: 30px;
+    color: red;
+}
+.contenedor-tabla
+{
+    border-radius: 5px;
+    border-style: solid 1px gray;
+}
+.bg-encabezado-grilla th
+{
+    background-color: orangered;
 }
 /* celulares */
 @media (max-width: 576px){
@@ -397,7 +541,19 @@ h2, h3 {
   {
     font-size: 20px;
   }
+  .btn-quitar{
+    color: red;
+  }
+  .table tbody td
+  {
+    font-size: 15px;
+  }
+  .table thead th
+  {
+    font-size: 15px;
+  }
 }
+
 /*Tablets */
 @media (max-width: 992px)
 {
@@ -407,6 +563,16 @@ h2, h3 {
 }
 p{
  font-size: 23px
-};
+}
+.btn-quitar
+{
+    color: red;
+}
+td, th
+{
+    font-size: 20px;
+}
+.btn
+{font-size: 20px;}
 }
 
