@@ -1,23 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
 
+:root {
+  --color-primary: #ff4500;
+  --color-primary-hover: #ff8533;
+  --color-dark: #1a1a1a;
+  --color-bg: #111;
+  --color-card: #1e1e1e;
+  --color-text: #ffffff;
+}
 
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
 }
+
 main
 {
     flex-grow: 1;
-   
+ 
 }
+
+.titulo-gamer{
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 3px solid var(--color-primary);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.subtitulo-gamer{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    text-shadow: 
+        0 0 5px var(--color-text),
+        0 0 10px var(--color-text),
+        0 0 20px var(--color-primary),
+        0 0 40px var(--color-primary);
+}
+
 .carousel-item
 {
     height: 550px;
 }
-
-
 
 .carousel-item img{
   height: 100%;   
@@ -34,10 +61,10 @@ main
 
 .info-carrusel
 {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--color-bg);
     border-radius: 10px;
     padding: 10px;
-    color: white;
+    color: var(--color-text);
     font-weight: bolder;
 }
 
@@ -55,42 +82,9 @@ main
     transform: scale(1.03);
 }
 
-.btn-comprar {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: orangered;
-    color: white;
-    font-weight: 600;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.btn-volver{
-    background-color: orangered;
-    color: white;
-    font-weight: 600;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.btn-volver:hover {
-    background-color: black;
-    transform: scale(1.05);
-}
-
-.btn-comprar:hover {
-    background-color: #ff5722;
-    box-shadow: 0 0 15px orangered;
-}
-
 .info-producto {
-    background-color: orangered;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text);
     min-height: 400px;
 }
 
@@ -100,35 +94,29 @@ main
 }
 
 .plataforma {
-    background-color: black;
+    background-color: var(--color-bg);
     color: white;
     margin-right: 5px;
 }
 
-.seccion-titulo {
-    font-family: 'Orbitron', sans-serif;
-    border-bottom: 2px solid orangered;
-    display: inline-block;
-    padding-bottom: 5px;
-}
 
 .comentario-card {
-    background-color: #1a1a1a;
+    background-color: var(--color-dark);
     border: none;
-    color: white;
+    color: var(--color-text);
     border-radius: 10px;
 }
 
 .navbar-color{
-    background-color: orangered;
+    background-color: var(--color-primary);
 }
 
 .nav-links-color{
-    color: white;
+    color: var(--color-text);
 }
 
 .nav-links-color:hover{
-    color: black;
+    color: var(--color-bg);
 }
 
 .btn-buscar {
@@ -139,212 +127,145 @@ main
     box-shadow: 0 0 10px #ffae00,
                 0 0 20px #ffae00;
     transform: scale(1.05);
-    color: orangered;
+    color: var(--color-primary);
 }
 
+.btn-gamer {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: 'Orbitron', sans-serif;
+    }
 
-@media (max-width: 992px){
-    .carousel-item{
-        height: 560px;
+.btn-gamer:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-bg);
+    }
 
-    }
-        .carousel-item img{
-        height: 560px;
-        object-position: 80% center;
-    }
-    .carousel-item img.carousel-item-rivals{
-      object-position:5% center;
-  }
-    .info-carrusel
-    {
-        font-size: 20px;
-    }
-    h5 
-    {
-        font-size: 25px;
-    }
+.btn-comprar { 
+    position: absolute; 
+    bottom: 20px;
+    right: 20px; 
+    font-weight: 600; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: 0.3s ease;
 }
-/*Clases seccion Principal*/
-h1, h2, h3, h4,h5, h6{
-   font-family:  'Roboto', sans-serif;
+
+.btn-carrito { 
+    background-color: var(--color-primary); 
+    color: white; 
+    border-radius: 8px; 
+    font-size: 20px; 
+    padding: 5px; 
+    width: auto; 
 }
-p, label, span
-{
-    font-family: 'Roboto', sans-serif;;
-}
+
 .contenedor-seccion-principal
 {
     
-  background-color: #1e1e1e;   
-  color: white;                
+  background-color: var(--color-card);   
+  color: var(--color-text);                
   padding: 40px;
   border-radius: 20px;
-  border: 2px solid orangered; 
-  box-shadow: 0 0 15px orangered;
+  border: 2px solid var(--color-primary); 
+  box-shadow: 0 0 15px var(--color-primary);
   text-align: center;
 }
 
-
-
-.titulo-principal
-{
-
-  border-bottom: 3px solid #ff4500;
-  display: inline-block;
-  padding-bottom: 5px;
-  justify-content: center;
-  font-family:'Roboto', sans-serif;
-}
-.texto-principal
-{
-    font-family: 'Roboto', sans-serif;
-}
 .publicidad{
   position: sticky;
   top: 120px;
-  background:#1e1e1e;
-  color:white;
+  background:var(--color-card);
+  color:var(--color-text);
   border-radius:10px;
   height:500px;
-  background-image: url("../img/publicidad1.png");
+ 
   background-size: 100% 100%;   
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.publicidad1{
+    background-image: url("../img/publicidad1.png");
+}
+
 .publicidad2{
-  position: sticky;
-  top: 120px;
-  background:#1e1e1e;
-  color:white;
-  border-radius:10px;
-  height:500px;
   background-image: url("../img/publicidad2.png");
-  background-size: 100% 100%;   
-  background-position: center;
-  background-repeat: no-repeat;
 }
-.categoria-terror
-{
-    background-color: #ff4500;
-    color: white;
+
+.categoria{
+    color: var(--color-text);
     border-radius: 5px;
     padding: 5px;
 }
-.categoria-shooter
-{
-     background-color: rgba(219, 13, 13, 0.781);
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-terror{
+    background-color: rgba(107, 3, 148, 0.612);   
 }
-.categoria-aventura
-{
-     background-color: rgba(17, 112, 4, 0.781);
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-shooter{
+    background-color: rgba(219, 13, 13, 0.781);
 }
-.categoria-deporte
-{
-     background-color: rgba(11, 4, 112, 0.781);
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-aventura{
+    background-color: rgba(17, 112, 4, 0.781);
 }
-.categoria-combate
-{
-     background-color: rgb(240, 6, 6);
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-deporte{
+    background-color: rgba(11, 4, 112, 0.781);
 }
+
+.categoria-combate{
+    background-color: rgb(242, 226, 0);
+}
+
 .contenedor-oferta
 {
-    
-    font-size: 25px;
-    
+    font-size: 25px;   
     box-sizing: border-box;
     border-radius: 10px;
 
 }
+
 .descuento
 {   
-     background: rgba(241, 99, 4, 0.986);
-    
-    color: black;
+    background: var(--color-primary);
+    color: var(--color-bg);
     padding: 5px;
     
 }
+
 .precio
 {
-    background-color: gray;
+    background-color: var(--color-bg);
     padding: 5px;
 }
+
 .seccion-ofertas
 {
     box-sizing: border-box;
-    background-color: #1a1a1a;
+    background-color: var(--color-dark);
     border-radius: 5px;
     padding: 8px;
 }
+
 .oferta{
-    color: orangered;
+    color: var(--color-primary);
     font-size: 30px;
     font-weight: bolder;
 }
+
 .precio-anterior
 {
     color: gray;
 }
-.btn-carrito
-{
-    background-color: orangered;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 5px;
-    width: auto;
-}
-h2, h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-.titulos
-{
-     color: orangered;
-  text-shadow: 0 0 12px rgba(250, 139, 139, 0.938);
-  text-align: center;
-  font-size: 30px;
-}
-
-.seccion-ofertas h2 {
-  color: #a78bfa;
-  text-shadow: 0 0 12px rgba(167,139,250,.5);
-}
-
-
-
 
 .login-img{
     object-fit: cover;
 
 }
 
-.btn-ingresar-login{
-    background-color: orangered;
-}
-
-.btn-ingresar-login:hover{
-    background-color: #ffae00;
-    color: black;
-}
-
-.form-control:focus {
-  border-color: orangered; 
-  box-shadow: 0 0 0 0.25rem rgba(255, 122, 0, 0.25);
-}
-/*Quienes Somos*/
 .img-quienesSomos
 {
     height: 300px;
@@ -353,29 +274,21 @@ h2, h3 {
     border-radius: 50%;
     object-position: top center;
 }
+
 .nombres
 {
-    color: orangered;
+    color: var(--color-primary);
     font-family: 'roboto', sans-serif;
 }
 
 .video-categoria{
-   position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    transform: translate(-50%, -50%);
-   
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 200%;
     height: 200%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .contenedor-video{
@@ -383,9 +296,6 @@ h2, h3 {
    width: 100%;
    height: 60vh;
    overflow: hidden;
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
 }
 
 .contenido-video{
@@ -393,23 +303,22 @@ h2, h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--color-text);
     
 }
 
 .contenido-video h1{
     font-family: 'Orbitron', sans-serif;
     font-size: 45px;
-    font-size: 64px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: white;
+    color: var(--color-text);
 
     text-shadow:
-        0 0 8px orangered,
-        0 0 20px orangered,
-        0 0 40px #ff4500;
+        0 0 8px var(--color-primary),
+        0 0 20px var(--color-primary),
+        0 0 40px var(--color-primary);
 
     margin-bottom: 25px;
 }
@@ -418,15 +327,12 @@ h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-weight: 600;
-    color: orangered;
-    font-size: 32px;
-    font-weight: 600;
-    color: orangered;
-    letter-spacing: 3px;
+    color: var(--color-primary);
+    letter-spacing: 2px;
 
     text-shadow:
-        0 0 5px #ffffff,
-        0 0 15px orangered;
+        0 0 5px var(--color-text),
+        0 0 15px var(--color-primary);
 }
 
 .img-card {
@@ -435,64 +341,38 @@ h2, h3 {
 }
 
 .precio-badge{
-  color: #ff6a00;
+  color: var(--color-primary);
   font-size: 18px;
-    background-color: transparent;
-  color: #ff6a00;
-  font-size: 1.2rem;
   font-weight: 700;
   padding: 0;
 }
 
 .page-link:hover {
-  background-color: #ff6a00;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-text);
 }
 .pagination .page-link {
-  background-color: #1e1e1e;
-  color: #ff6a00;
-  border: 1px solid #333;
+  background-color: var(--color-card);
+  color: var(--color-primary);
+  border: 1px solid var(--color-card);
 }
 
 .pagination .page-link:hover {
-  background-color: #ff6a00;
-  color: #fff;
-  border-color: #ff6a00;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-color: var(--color-primary);
 }
 
 
 .pagination .page-item.active .page-link {
-  background-color: #ff6a00;
-  border-color: #ff6a00;
-  color: #fff;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .pagination .page-link:focus {
   box-shadow: none;
 }
-
-
-
-.titulo-registrarse{
-    font-family: 'Orbitron', sans-serif;
-    color: #ff6a00;
-    text-shadow: 
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px #ff6a00,
-        0 0 40px #ff6a00;
-}
-
-.btn-registrar {
-    background-color: orangered;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    }
-
-.btn-registrar:hover {
-    background-color: #ff8533;
-    color: white;
-    }
 
 .formulario-registrarse{
     max-width: 60%;
@@ -500,14 +380,13 @@ h2, h3 {
 }
 
 .form-control:focus {
-    border-color: #ff6a00;
+    border-color: var(--color-primary);
     box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
     }
 
-/*Clases pagina carrito*/
 .btn-quitar
 {
-    color: white;
+    color: var(--color-text);
     text-align: center;
 }
 .btn-quitar:hover
@@ -518,15 +397,15 @@ h2, h3 {
 .contenedor-tabla
 {
     border-radius: 5px;
-    border-style: solid 1px gray;
+    border-style: 1px solid gray;
 }
 .bg-encabezado-grilla th
 {
-    background-color: orangered;
+    background-color: var(--color-primary);
 }
 .footer {
-      background-color:orangered;
-      color: white;
+      background-color:var(--color-primary);
+      color: var(--color-text);
       padding: 15px;
     }
 
@@ -536,7 +415,7 @@ h2, h3 {
     }
 
     .footer a {
-      color: white;
+      color: var(--color-text);
       text-decoration: none;
     }
 
@@ -631,5 +510,24 @@ td, th
         margin: 10px;
       }
 
-}
+.carousel-item{
+        height: 560px;
 
+    }
+        .carousel-item img{
+        height: 560px;
+        object-position: 80% center;
+    }
+    .carousel-item img.carousel-item-rivals{
+      object-position:5% center;
+  }
+    .info-carrusel
+    {
+        font-size: 20px;
+    }
+    h5 
+    {
+        font-size: 25px;
+    }
+
+}
