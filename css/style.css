@@ -181,41 +181,33 @@ main
   background-position: center;
   background-repeat: no-repeat;
 }
-.categoria-terror
-{
-    background-color: rgba(167,139,250,.5);
+
+.categoria{
     color: var(--color-text);
     border-radius: 5px;
     padding: 5px;
 }
-.categoria-shooter
-{
-     background-color: rgba(219, 13, 13, 0.781);
-    color: var(--color-text);
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-terror{
+    background-color: rgba(107, 3, 148, 0.612);   
 }
-.categoria-aventura
-{
-     background-color: rgba(17, 112, 4, 0.781);
-    color: var(--color-text);
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-shooter{
+    background-color: rgba(219, 13, 13, 0.781);
 }
-.categoria-deporte
-{
-     background-color: rgba(11, 4, 112, 0.781);
-    color: var(--color-text);
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-aventura{
+    background-color: rgba(17, 112, 4, 0.781);
 }
-.categoria-combate
-{
-     background-color: rgb(240, 6, 6);
-    color: var(--color-text);
-    border-radius: 5px;
-    padding: 5px;
+
+.categoria-deporte{
+    background-color: rgba(11, 4, 112, 0.781);
 }
+
+.categoria-combate{
+    background-color: rgb(242, 226, 0);
+}
+
 .contenedor-oferta
 {
     
@@ -265,10 +257,6 @@ main
 
 }
 
-.form-control:focus {
-  border-color: var(--color-primary); 
-  box-shadow: 0 0 0 0.25rem rgba(255, 122, 0, 0.25);
-}
 /*Quienes Somos*/
 .img-quienesSomos
 {
