@@ -149,6 +149,17 @@ main
     color: var(--color-primary);
 }
 
+.btn-gamer {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: 'Orbitron', sans-serif;
+    }
+
+.btn-gamer:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-bg);
+    }
+
 
 @media (max-width: 992px){
     .carousel-item{
@@ -303,16 +314,7 @@ p, label, span
 {
     color: gray;
 }
-.btn-carrito
-{
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    font-weight: bold;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 5px;
-    width: auto;
-}
+
 h2, h3 {
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -336,15 +338,6 @@ h2, h3 {
 .login-img{
     object-fit: cover;
 
-}
-
-.btn-ingresar-login{
-    background-color: var(--color-primary);
-}
-
-.btn-ingresar-login:hover{
-    background-color: #ffae00;
-    color: black;
 }
 
 .form-control:focus {
@@ -489,17 +482,6 @@ h2, h3 {
         0 0 20px var(--color-primary),
         0 0 40px var(--color-primary);
 }
-
-.btn-registrar {
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    font-family: 'Orbitron', sans-serif;
-    }
-
-.btn-registrar:hover {
-    background-color: var(--color-primary-hover);
-    color: var(--color-text);
-    }
 
 .formulario-registrarse{
     max-width: 60%;
