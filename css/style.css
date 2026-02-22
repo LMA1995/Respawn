@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
 
+:root {
+  --color-primary: #ff5900;
+  --color-primary-hover: #ff8533;
+  --color-dark: #1a1a1a;
+  --color-bg: #111;
+  --color-card: #1e1e1e;
+  --color-text: #ffffff;
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -32,10 +41,10 @@ main
 
 .info-carrusel
 {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--color-bg);
     border-radius: 10px;
     padding: 10px;
-    color: white;
+    color: var(--color-text);
     font-weight: bolder;
 }
 
@@ -57,8 +66,8 @@ main
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: orangered;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text);
     font-weight: 600;
     padding: 10px 20px;
     text-decoration: none;
@@ -67,8 +76,8 @@ main
 }
 
 .btn-volver{
-    background-color: orangered;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text);
     font-weight: 600;
     padding: 10px 20px;
     text-decoration: none;
@@ -77,18 +86,18 @@ main
 }
 
 .btn-volver:hover {
-    background-color: black;
+    background-color: var(--color-bg);
     transform: scale(1.05);
 }
 
 .btn-comprar:hover {
     background-color: #ff5722;
-    box-shadow: 0 0 15px orangered;
+    box-shadow: 0 0 15px var(--color-primary);
 }
 
 .info-producto {
-    background-color: orangered;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text);
     min-height: 400px;
 }
 
@@ -105,15 +114,15 @@ main
 
 .seccion-titulo {
     font-family: 'Orbitron', sans-serif;
-    border-bottom: 2px solid orangered;
+    border-bottom: 2px solid var(--color-primary);
     display: inline-block;
     padding-bottom: 5px;
 }
 
 .comentario-card {
-    background-color: #1a1a1a;
+    background-color: var(--color-dark);
     border: none;
-    color: white;
+    color: var(--color-text);
     border-radius: 10px;
 }
 
@@ -122,11 +131,11 @@ main
 }
 
 .nav-links-color{
-    color: white;
+    color: var(--color-text);
 }
 
 .nav-links-color:hover{
-    color: black;
+    color: var(--color-bg);
 }
 
 .btn-buscar {
@@ -137,7 +146,7 @@ main
     box-shadow: 0 0 10px #ffae00,
                 0 0 20px #ffae00;
     transform: scale(1.05);
-    color: orangered;
+    color: var(--color-primary);
 }
 
 
@@ -174,11 +183,11 @@ p, label, span
 {
     
   background-color: #1e1e1e;   
-  color: white;                
+  color: var(--color-text);                
   padding: 40px;
   border-radius: 20px;
-  border: 2px solid orangered; 
-  box-shadow: 0 0 15px orangered;
+  border: 2px solid var(--color-primary); 
+  box-shadow: 0 0 15px var(--color-primary);
   text-align: center;
 }
 
@@ -187,7 +196,7 @@ p, label, span
 .titulo-principal
 {
 
-  border-bottom: 3px solid #ff4500;
+  border-bottom: 3px solid var(--color-primary);
   display: inline-block;
   padding-bottom: 5px;
   justify-content: center;
@@ -200,8 +209,8 @@ p, label, span
 .publicidad{
   position: sticky;
   top: 120px;
-  background:#1e1e1e;
-  color:white;
+  background:var(--color-card);
+  color:var(--color-text);
   border-radius:10px;
   height:500px;
   background-image: url("../img/publicidad1.png");
@@ -212,8 +221,8 @@ p, label, span
 .publicidad2{
   position: sticky;
   top: 120px;
-  background:#1e1e1e;
-  color:white;
+  background:var(--color-card);
+  color:var(--color-text);
   border-radius:10px;
   height:500px;
   background-image: url("../img/publicidad2.png");
@@ -223,36 +232,36 @@ p, label, span
 }
 .categoria-terror
 {
-    background-color: #ff4500;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text);
     border-radius: 5px;
     padding: 5px;
 }
 .categoria-shooter
 {
      background-color: rgba(219, 13, 13, 0.781);
-    color: white;
+    color: var(--color-text);
     border-radius: 5px;
     padding: 5px;
 }
 .categoria-aventura
 {
      background-color: rgba(17, 112, 4, 0.781);
-    color: white;
+    color: var(--color-text);
     border-radius: 5px;
     padding: 5px;
 }
 .categoria-deporte
 {
      background-color: rgba(11, 4, 112, 0.781);
-    color: white;
+    color: var(--color-text);
     border-radius: 5px;
     padding: 5px;
 }
 .categoria-combate
 {
      background-color: rgb(240, 6, 6);
-    color: white;
+    color: var(--color-text);
     border-radius: 5px;
     padding: 5px;
 }
@@ -267,7 +276,7 @@ p, label, span
 }
 .descuento
 {   
-     background: rgba(241, 99, 4, 0.986);
+     background: var(--color-primary);
     
     color: black;
     padding: 5px;
@@ -281,12 +290,12 @@ p, label, span
 .seccion-ofertas
 {
     box-sizing: border-box;
-    background-color: #1a1a1a;
+    background-color: var(--color-dark);
     border-radius: 5px;
     padding: 8px;
 }
 .oferta{
-    color: orangered;
+    color: var(--color-primary);
     font-size: 30px;
     font-weight: bolder;
 }
@@ -296,8 +305,8 @@ p, label, span
 }
 .btn-carrito
 {
-    background-color: orangered;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text);
     font-weight: bold;
     border-radius: 8px;
     font-size: 20px;
@@ -310,7 +319,7 @@ h2, h3 {
 }
 .titulos
 {
-     color: orangered;
+     color: var(--color-primary);
   text-shadow: 0 0 12px rgba(250, 139, 139, 0.938);
   text-align: center;
   font-size: 30px;
@@ -330,7 +339,7 @@ h2, h3 {
 }
 
 .btn-ingresar-login{
-    background-color: orangered;
+    background-color: var(--color-primary);
 }
 
 .btn-ingresar-login:hover{
@@ -339,7 +348,7 @@ h2, h3 {
 }
 
 .form-control:focus {
-  border-color: orangered; 
+  border-color: var(--color-primary); 
   box-shadow: 0 0 0 0.25rem rgba(255, 122, 0, 0.25);
 }
 /*Quienes Somos*/
@@ -353,7 +362,7 @@ h2, h3 {
 }
 .nombres
 {
-    color: orangered;
+    color: var(--color-primary);
     font-family: 'roboto', sans-serif;
 }
 
@@ -391,7 +400,7 @@ h2, h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--color-text);
     
 }
 
@@ -402,12 +411,12 @@ h2, h3 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: white;
+    color: var(--color-text);
 
     text-shadow:
-        0 0 8px orangered,
-        0 0 20px orangered,
-        0 0 40px #ff4500;
+        0 0 8px var(--color-primary),
+        0 0 20px var(--color-primary),
+        0 0 40px var(--color-primary);
 
     margin-bottom: 25px;
 }
@@ -416,15 +425,15 @@ h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-weight: 600;
-    color: orangered;
+    color: var(--color-primary);
     font-size: 32px;
     font-weight: 600;
-    color: orangered;
+    color: var(--color-primary);
     letter-spacing: 3px;
 
     text-shadow:
-        0 0 5px #ffffff,
-        0 0 15px orangered;
+        0 0 5px var(--color-text),
+        0 0 15px var(--color-primary);
 }
 
 .img-card {
@@ -462,7 +471,7 @@ h2, h3 {
 .pagination .page-item.active .page-link {
   background-color: #ff6a00;
   border-color: #ff6a00;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .pagination .page-link:focus {
@@ -473,23 +482,23 @@ h2, h3 {
 
 .titulo-registrarse{
     font-family: 'Orbitron', sans-serif;
-    color: #ff6a00;
+    color: var(--color-primary);
     text-shadow: 
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px #ff6a00,
-        0 0 40px #ff6a00;
+        0 0 5px var(--color-text),
+        0 0 10px var(--color-text),
+        0 0 20px var(--color-primary),
+        0 0 40px var(--color-primary);
 }
 
 .btn-registrar {
-    background-color: orangered;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text);
     font-family: 'Orbitron', sans-serif;
     }
 
 .btn-registrar:hover {
-    background-color: #ff8533;
-    color: white;
+    background-color: var(--color-primary-hover);
+    color: var(--color-text);
     }
 
 .formulario-registrarse{
@@ -498,14 +507,14 @@ h2, h3 {
 }
 
 .form-control:focus {
-    border-color: #ff6a00;
+    border-color: var(--color-primary);
     box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
     }
 
 /*Clases pagina carrito*/
 .btn-quitar
 {
-    color: white;
+    color: var(--color-text);
     text-align: center;
 }
 .btn-quitar:hover
@@ -520,11 +529,11 @@ h2, h3 {
 }
 .bg-encabezado-grilla th
 {
-    background-color: orangered;
+    background-color: var(--color-primary);
 }
 .footer {
-      background-color:orangered;
-      color: white;
+      background-color:var(--color-primary);
+      color: var(--color-text);
       padding: 15px;
     }
 
@@ -534,7 +543,7 @@ h2, h3 {
     }
 
     .footer a {
-      color: white;
+      color: var(--color-text);
       text-decoration: none;
     }
 
