@@ -95,7 +95,7 @@ main
 }
 
 .plataforma {
-    background-color: black;
+    background-color: var(--color-bg);
     color: white;
     margin-right: 5px;
 }
@@ -165,7 +165,7 @@ main
 .contenedor-seccion-principal
 {
     
-  background-color: #1e1e1e;   
+  background-color: var(--color-card);   
   color: var(--color-text);                
   padding: 40px;
   border-radius: 20px;
@@ -181,22 +181,18 @@ main
   color:var(--color-text);
   border-radius:10px;
   height:500px;
-  background-image: url("../img/publicidad1.png");
+ 
   background-size: 100% 100%;   
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.publicidad1{
+    background-image: url("../img/publicidad1.png");
+}
+
 .publicidad2{
-  position: sticky;
-  top: 120px;
-  background:var(--color-card);
-  color:var(--color-text);
-  border-radius:10px;
-  height:500px;
   background-image: url("../img/publicidad2.png");
-  background-size: 100% 100%;   
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .categoria{
@@ -227,9 +223,7 @@ main
 
 .contenedor-oferta
 {
-    
-    font-size: 25px;
-    
+    font-size: 25px;   
     box-sizing: border-box;
     border-radius: 10px;
 
@@ -238,14 +232,14 @@ main
 .descuento
 {   
     background: var(--color-primary);
-    color: black;
+    color: var(--color-bg);
     padding: 5px;
     
 }
 
 .precio
 {
-    background-color: gray;
+    background-color: var(--color-bg);
     padding: 5px;
 }
 
@@ -266,11 +260,6 @@ main
 .precio-anterior
 {
     color: gray;
-}
-
-.seccion-ofertas h2 {
-  color: #a78bfa;
-  text-shadow: 0 0 12px rgba(167,139,250,.5);
 }
 
 .login-img{
@@ -355,7 +344,6 @@ main
 .precio-badge{
   color: var(--color-primary);
   font-size: 18px;
-  background-color: transparent;
   font-weight: 700;
   padding: 0;
 }
@@ -397,7 +385,6 @@ main
     box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.25);
     }
 
-/*Clases pagina carrito*/
 .btn-quitar
 {
     color: var(--color-text);
@@ -411,7 +398,7 @@ main
 .contenedor-tabla
 {
     border-radius: 5px;
-    border-style: solid 1px gray;
+    border-style: 1px solid gray;
 }
 .bg-encabezado-grilla th
 {
