@@ -33,7 +33,7 @@ main
 
 
 .subtitulo-gamer{
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--color-primary);
     text-shadow: 
         0 0 5px var(--color-text),
@@ -109,7 +109,7 @@ main
 }
 
 .navbar-color{
-    background-color: orangered;
+    background-color: var(--color-primary);
 }
 
 .nav-links-color{
@@ -154,16 +154,13 @@ main
 }
 
 .btn-carrito { 
-    background-color: orangered; 
+    background-color: var(--color-primary); 
     color: white; 
     border-radius: 8px; 
     font-size: 20px; 
     padding: 5px; 
     width: auto; 
 }
-
-
-
 
 .contenedor-seccion-principal
 {
@@ -325,7 +322,6 @@ main
 .contenido-video h1{
     font-family: 'Orbitron', sans-serif;
     font-size: 45px;
-    font-size: 64px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -344,10 +340,7 @@ main
     font-size: 25px;
     font-weight: 600;
     color: var(--color-primary);
-    font-size: 32px;
-    font-weight: 600;
-    color: var(--color-primary);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
     text-shadow:
         0 0 5px var(--color-text),
@@ -363,7 +356,6 @@ main
   color: var(--color-primary);
   font-size: 18px;
   background-color: transparent;
-  font-size: 1.2rem;
   font-weight: 700;
   padding: 0;
 }
