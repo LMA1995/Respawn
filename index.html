@@ -18,14 +18,1017 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Respawn </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Respawn</title>
   </head>
+
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-color">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">Respawn</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-links-color"
+                  aria-current="page"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >Iniciar sesión</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-links-color" href="./pages/paginaContacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-links-color"
+                  href="./pages/quienesSomos.html"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar videojuegos..."
+                aria-label="Search"
+              />
+              <button class="btn btn-dark btn-buscar" type="submit">
+                Buscar
+              </button>
+            </form>
+            <a
+              href="./pages/carrito.html"
+              class="nav-links-color fs-4 ms-lg-3 mt-md-4 mt-sm-4 mt-lg-0"
+            >
+              <i class="bi bi-cart3"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="fondo-respawn">
+      <div class="hero-overlay d-flex align-items-center">
+        <section class="container-fluid p-0">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1770093365"
+                  class="d-block img-carrusel"
+                  alt="Resident Evil 4"
+                />
+                <div class="carousel-caption d-none d-md-block info-carrusel">
+                  <h5 class="text-white">Resident Evil 4</h5>
+                  <p>
+                    Shooter de terror y supervivencia donde Leon S. Kennedy debe
+                    rescatar a la hija del presidente en un pueblo europeo
+                    dominado por una secta misteriosa. Combina acción intensa,
+                    exploración y una atmósfera inquietante que revolucionó la
+                    saga y el género.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://shared.fastly.steamstatic.com//store_item_assets/steam/apps/2767030/5804d4e34df229fd7e700a6d34f364b291f36767/capsule_616x353.jpg?t=1768793897"
+                  class="d-block img-carrusel carousel-item-rivals"
+                  alt="Rivals"
+                />
+                <div class="carousel-caption d-none d-md-block info-carrusel">
+                  <h5 class="text-white">Rivals</h5>
+                  <p>
+                    Hero shooter 6 vs 6 con personajes de Marvel donde los
+                    equipos combinan habilidades y destruyen escenarios para
+                    ganar ventaja en batallas multiversales llenas de acción.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://shared.fastly.steamstatic.com//store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1749053861"
+                  class="d-block img-carrusel"
+                  alt="Counter Srike 2"
+                />
+                <div class="carousel-caption d-none d-md-block info-carrusel">
+                  <h5 class="text-white">Counter Strike 2</h5>
+                  <p>
+                    Shooter táctico competitivo donde dos equipos se enfrentan
+                    en partidas estratégicas basadas en precisión, trabajo en
+                    equipo y reflejos rápidos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+      <section class="container mt-5" id="ofertas">
+        <div class="text-center contenedor-seccion-principal mt-2">
+          <div class="text-center">
+          <h1 class="titulo-gamer mb-4">Bienvenidos a Respawn</h1>
+          </div>
+          <div>
+          <p class="texto-principal">
+            Respawn es tu punto de reinicio hacia nuevas aventuras. Descubrí los
+            títulos más épicos, los clásicos inolvidables y los lanzamientos más
+            esperados en un solo lugar. Ya seas competitivo, explorador o fan de
+            las historias increíbles, tenemos el juego perfecto esperándote.
+            Encendé tu próxima partida, subí de nivel tu colección y viví la
+            experiencia gamer como se merece.
+          </p>
+          </div>
+        </div>
+        <h2 class="my-4 text-center">
+          Te invitamos a descubrir nuestros juegos
+        </h2>
+        <div class="container">
+          <div class="row">
+            <aside class="col-lg-2 d-none d-lg-block publicidad publicidad1"></aside>
+            <!-- ZONA DE PRODUCTOS -->
+            <div class="col-12 col-lg-8">
+              <div class="row">
+                <!-- CARD 1 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/782330/header.jpg?t=1755109910"
+                      class="card-img-top"
+                      alt="Juego Doom"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Doom</h5>
+                      <p class="card-text">
+                        Shooter frenético donde enfrentas demonios en Marte y el
+                        infierno con armas brutales y combates sin descanso
+                        total.
+                      </p>
+                      <div class="text-center">
+                        <div>
+                          <label class="categoria categoria-terror">Terror</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="./pages/detalle-producto.html"
+                            class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1770093365"
+                      class="card-img-top"
+                      alt="Resident Evil"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Resident Evil</h5>
+                      <p class="card-text">
+                        Survival horror lleno de tensión, puzzles y criaturas
+                        aterradoras donde cada bala cuenta para poder
+                        sobrevivir.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-terror">Terror</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1764817633"
+                      class="card-img-top"
+                      alt="Pubg Btattlegrounds"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Pubg</h5>
+                      <p class="card-text">
+                        Battle royale realista donde cien jugadores luchan por
+                        sobrevivir en mapas enormes usando estrategia y
+                        precisión.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-shooter">Shooter</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1750909504"
+                      class="card-img-top"
+                      alt="God of Ware Ragnarok"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">God Of War</h5>
+                      <p class="card-text">
+                        Aventura épica llena de mitología, combates intensos y
+                        una emotiva historia de padre e hijo enfrentando dioses.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-aventura">Aventura</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="./pages/carrito.html"
+                            class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2129530/4cdda917a0155258a2e7909d7869f35d8f980f96/header.jpg?t=1770997391"
+                      class="card-img-top"
+                      alt="Reanimal"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Reanimal</h5>
+                      <p class="card-text">
+                        Terror cooperativo oscuro donde dos hermanos deben
+                        escapar de criaturas grotescas en un mundo
+                        distorsionado.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-terror">Terror</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1745368562"
+                      class="card-img-top"
+                      alt="Left 4 Dead"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Left 4 Dead</h5>
+                      <p class="card-text">
+                        Shooter cooperativo de supervivencia donde equipos
+                        enfrentan hordas de zombis en campañas llenas de acción.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-terror">Terror</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/ec3fb7747fd8080ef53d7686e0d98c5abe1f51f1/header.jpg?t=1769021004"
+                      class="card-img-top"
+                      alt="EA Sports 25"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">EA Sports 25</h5>
+                      <p class="card-text">
+                        Simulador de fútbol realista con licencias oficiales,
+                        modos competitivos y partidos llenos de emoción
+                        constante.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-deporte">Deporte</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/10/header.jpg?t=1745368572"
+                      class="card-img-top"
+                      alt="Counter Strike"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Counter Strike</h5>
+                      <p class="card-text">
+                        Shooter táctico competitivo donde la estrategia,
+                        reflejos y trabajo en equipo definen cada ronda intensa.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-shooter">Shooter</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1785650/header.jpg?t=1739858016"
+                      class="card-img-top"
+                      alt="Top Spin 2k25"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Top Spin 2k25</h5>
+                      <p class="card-text">
+                        Simulador de tenis realista con físicas precisas,
+                        torneos oficiales y partidos que exigen técnica y
+                        timing.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-deporte">Deporte</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250180/header.jpg?t=1727159336"
+                      class="card-img-top"
+                      alt="Metal Slug 3"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Metal slug 3</h5>
+                      <p class="card-text">
+                        Clásico arcade de acción lateral con humor, explosiones
+                        y misiones frenéticas llenas de enemigos icónicos.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-aventura">Aventura</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237320/header.jpg?t=1763684832"
+                      class="card-img-top"
+                      alt="Sonic Frontiers"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Sonic Frontiers</h5>
+                      <p class="card-text">
+                        Aventura de mundo abierto donde Sonic explora islas
+                        misteriosas a toda velocidad resolviendo desafíos.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-aventura">Aventura</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 h-100">
+                    <img
+                      src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/header.jpg?t=1758754863"
+                      class="card-img-top"
+                      alt="Dragon Ball Sparking Zero"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Dragon Ball Zero</h5>
+                      <p class="card-text">
+                        Combates espectaculares con luchadores icónicos, poderes
+                        devastadores y batallas fieles al anime original.
+                      </p>
+                      <div class="mt-auto text-center">
+                        <div>
+                          <label class="categoria categoria-combate">Combate</label>
+                        </div>
+                        <div
+                          class="contenedor-oferta d-flex justify-content-center mt-3"
+                        >
+                          <p class="descuento">-20%</p>
+                          <p class="precio">$25.000</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                            >Agregar al Carrito 🛒</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <aside class="col-lg-2 d-none d-lg-block publicidad publicidad2"></aside>
+          </div>
+        </div>
+      </section>
+      <section class="container mt-4" id="categorias">
+        <div class="text-center">
+        <h1 class="titulo-gamer mb-4">Categorias</h1>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="subtitulo-gamer">⛷️ Deportes</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1665460/0fb7eebc292768714f2b3be666d59b59a11b0031/header.jpg?t=1770264185"
+                    class="card-img-top"
+                    alt="E Football"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">E Football</h5>
+
+                    <p>El mejor juego de Football</p>
+                    <p class="precio-anterior">
+                      <span class="oferta">$35.99</span> $45.00
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a
+                        href="./pages/carrito.html"
+                        class="nav-link btn-carrito"
+                        >Agregar al Carrito 🛒</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1785650/header.jpg?t=1739858016"
+                    class="card-img-top"
+                    alt="Top Spin"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Top Spin 2025</h5>
+
+                    <p>Entretenimiento asegurado</p>
+                    <p class="precio-anterior">
+                      <span class="oferta">$35.99</span> $45.00
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a href="./pages/error404.html" class="nav-link btn-carrito"
+                        >Agregar al Carrito 🛒</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2815070/4be2d85724afab7ccd40187b0d920dd03754991b/header.jpg?t=1770896729"
+                    class="card-img-top"
+                    alt="Ride 6"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ride 6</h5>
+
+                    <p>Toda la adrenalina en un solo lugar</p>
+                    <p class="precio-anterior">
+                      <span class="oferta">$35.99</span> $45.00
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a href="./pages/error404.html" class="nav-link btn-carrito"
+                        >Agregar al Carrito 🛒</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 text-end">
+                <a href="./pages/categoria-deporte.html" class="nav-link">Ver más ➡️</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mt-4">
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="subtitulo-gamer">💥Aventura</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2536520/8cfd8f0d73075b10b3b58d9eccfee799baffab79/header.jpg?t=1771023640"
+                    class="card-img-top"
+                    alt="Diablo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Diablo</h5>
+
+                    <p>Multijugador</p>
+                    <p class="precio-anterior">
+                      <span class="oferta">$30.000</span> $45.000
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a href="./pages/error404.html" class="nav-link btn-carrito btn-carrito"
+                        >Agregar al Carrito 🛒</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1750909504"
+                    class="card-img-top"
+                    alt="God of War"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">God of War</h5>
+
+                    <p>Individual</p>
+                    <p class="precio-anterior">
+                      <span class="oferta">$50.000</span> $75.000
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a href="./pages/error404.html" class="nav-link btn-carrito"
+                        >Agregar al Carrito 🛒</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/366250/header.jpg?t=1727156570"
+                    alt="Metal Slug"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Metal Slug</h5>
+                    <p>Multijugador</p>
+
+                    <p class="precio-anterior">
+                      <span class="oferta">$35.990</span> $45.000
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a href="./pages/error404.html" class="nav-link btn-carrito"
+                        >Agregar al Carrito 🛒</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-12 col-lg-12">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3717070/6e590c37107f7306ab9e42cc07d2aa92327625d1/header.jpg?t=1770735956"
+                    class="card-img-top"
+                    alt="WWE 2K26"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">WWE 2K26</h5>
+                    <p>Multijugador</p>
+
+                    <p class="precio-anterior">
+                      <span class="oferta">$60.000</span> $80.000
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a href="./pages/error404.html" class="nav-link btn-carrito"
+                        >Agregar al Carrito 🛒</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 text-end">
+                <a href="./pages/categoria-aventura.html" class="nav-link">Ver más ➡️</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mt-4">
+        <div class="text-center">
+          <h1 class="titulo-gamer mb-4">Proximos lanzamientos 💣​</h1>
+        </div>
+
+        <div class="row mb-5 seccion-ofertas">
+          <div class="col-12"></div>
+
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-12 col-md-12 col-lg-12">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1665460/0fb7eebc292768714f2b3be666d59b59a11b0031/header.jpg?t=1770264185"
+                    class="card-img-top"
+                    alt="E Football"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">E Football</h5>
+
+                    <p>
+                      Viví la emoción del fútbol con plantillas actualizadas,
+                      jugadas espectaculares y partidos online competitivos que
+                      te mantienen siempre en la cancha. Disfrutá gráficos
+                      renovados, controles precisos y desafíos constantes que
+                      convierten cada encuentro en una experiencia intensa y
+                      emocionante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2815070/4be2d85724afab7ccd40187b0d920dd03754991b/header.jpg?t=1770896729"
+                    class="card-img-top"
+                    alt="Ride 6"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ride 6</h5>
+
+                    <p>
+                      Sentí la velocidad en circuitos realistas y dominá motos
+                      de alto rendimiento en carreras llenas de adrenalina. Con
+                      físicas mejoradas, modos competitivos y desafíos
+                      exigentes, cada carrera te acerca a convertirte en el
+                      piloto definitivo del motociclismo virtual.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-16">
+                <div class="card h-100">
+                  <img
+                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3717070/6e590c37107f7306ab9e42cc07d2aa92327625d1/header.jpg?t=1770735956"
+                    class="card-img-top"
+                    alt="WWE 2K26"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">WWE 2K26</h5>
+                    <p>
+                      Entrá al ring con superestrellas icónicas, movimientos
+                      espectaculares y combates llenos de acción sin límites.
+                      Disfrutá modos de juego renovados, animaciones impactantes
+                      y rivalidades intensas que hacen de cada pelea un
+                      verdadero show inolvidable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 text-end">
+                <a href="./pages/error404.html" class="nav-link">Ver más ➡️</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center contenedor-seccion-principal my-2">
+          <p class="texto-principal">
+            En <strong>Respawn</strong> siempre hay algo nuevo por descubrir.
+            Nuestro catálogo sigue creciendo con cientos de títulos de todos los
+            géneros, desde los lanzamientos más esperados hasta joyas
+            imperdibles que no podés dejar pasar. Explorá, compará ofertas y
+            preparate para horas de diversión sin límites, porque acá el
+            entretenimiento está garantizado y la próxima gran aventura siempre
+            está a un clic de distancia. 🎮✨
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer mt-3">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <h2 class="fw-bold">RESPAWN</h2>
+            <p>
+              Tu tienda gamer de confianza.<br />
+              Consolas, juegos y accesorios al mejor precio.
+            </p>
+
+            <ul class="list-unstyled">
+              <li><a href="#categorias">Categorías</a></li>
+              <li><a href="./pages/quienesSomos.html">Quiénes Somos</a></li>
+              <li><a href="#ofertas">Ofertas</a></li>
+              <li><a href="./pages/paginaContacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider">
+            <h4 class="text-center">Seguinos</h4>
+            <div class="social-icons d-flex flex-row justify-content-center">
+              <a href="./pages/error404.html" class="nav-link"><i class="bi bi-facebook"></i></a>
+              <a href="./pages/error404.html" class="nav-link"><i class="bi bi-instagram"></i></a>
+              <a href="./pages/error404.html" class="nav-link"><i class="bi bi-twitter-x"></i></a>
+              </div>
+          </div>
+
+          <!-- Columna 3 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider text-center">
+            <h4>Contacto</h4>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i>San Miguel de Tucumán,
+              Argentina
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i>+54 381 000 0000</p>
+            <p><i class="bi bi-envelope-fill me-2"></i>contacto@respawn.com</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Respawn - Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <!-- Imagen izquierda -->
+              <div class="col-md-6 d-none d-md-block">
+                <img
+                  src="./img/imagen login.png"
+                  alt="Login"
+                  class="img-fluid h-100 login-img"
+                />
+              </div>
+
+              <!-- Formulario -->
+              <div class="col-md-6 p-4">
+                <h4 class="mb-3 text-center">Iniciar Sesión</h4>
+
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Correo electrónico</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      required
+                      placeholder="Ingresa tu correo electronico"
+                      maxlength="100"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      required
+                      placeholder="Ingresa tu contraseña"
+                      minlength="8"
+                      maxlength="12"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-gamer w-100 mb-3"
+                  >
+                    Ingresar
+                  </button>
+
+                  <div class="text-center mb-3">
+                    <p class="small">Iniciar sesión con</p>
+                    <button type="button" class="btn btn-outline-danger me-2">
+                      <a href="./pages/error404.html" class="nav-link">Google</a>
+                      
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                      <a href="./pages/error404.html" class="nav-link">Facebook</a>
+                      
+                    </button>
+                  </div>
+
+                  <div class="text-center mt-3">
+                    <p class="small">
+                      ¿No tienes cuenta?
+                      <a href="./pages/registro.html">Regístrate</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

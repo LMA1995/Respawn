@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="E-commerce desarrollado para la venta de videojuegos"
+    />
+    <meta
+      name="author"
+      content="Luis Altamiranda, Fatima Alfaro, Juan Manuel Sierra, Lucas Alarcon, Dante Herrera"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Detalle del videojuego</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-color">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Respawn</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-links-color"
+                  aria-current="page"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >Iniciar sesión</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-links-color" href="./paginaContacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-links-color" href="./quienesSomos.html">Nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar videojuegos..."
+                aria-label="Search"
+              />
+              <button class="btn btn-dark btn-buscar" type="submit">
+                Buscar
+              </button>
+            </form>
+            <a
+              href="./carrito.html"
+              class="nav-links-color fs-4 ms-lg-3 mt-md-4 mt-sm-4 mt-lg-0"
+            >
+              <i class="bi bi-cart3"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Sección Producto -->
+      <section class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0 text-md-center text-lg-start">
+            <div class="imagen-container">
+              <img
+                src="../img/doom.jpg"
+                class="img-fluid rounded"
+                alt="Doom Eternal"
+              />
+              <button type="button" class="btn btn-gamer btn-comprar">
+            <a href="./carrito.html" class="nav-link">COMPRAR</a>
+          </button>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="info-producto p-4 rounded">
+              <h1 class="titulo-producto mb-3">Doom Eternal</h1>
+
+              <p class="fs-4 fw-bold">$79.999 ARS</p>
+
+              <p class="fs-4">
+                <strong>Género:</strong> Shooter en primera persona (FPS)
+              </p>
+              <p class="fs-4"><strong>Desarrollador:</strong> id Software</p>
+
+              <div class="mt-3">
+                <span class="badge plataforma fs-6">PC</span>
+                <span class="badge plataforma fs-6">PS5</span>
+                <span class="badge plataforma fs-6">Xbox Series X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Descripción -->
+      <section>
+        <div class="container my-5">
+          <h1 class="titulo-gamer mb-4">Descripción</h1>
+          <p class="fs-5">
+            Doom Eternal lleva la saga a un nivel brutal de acción sin pausa.
+            Como el Doom Slayer, enfrentate a las fuerzas demoníacas que han
+            invadido la Tierra y desatá tu arsenal mortal para destruir hordas
+            de enemigos. Con gráficos intensos, un diseño de niveles dinámico y
+            una banda sonora que acelera tu pulso, este juego redefine el género
+            shooter en primera persona.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección Comentarios -->
+      <section class="container py-5">
+        <div>
+          <h1 class="titulo-gamer mb-4">Comentarios</h1>
+
+          <div class="row">
+            <!-- Comentario 1 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <div class="card comentario-card p-3 h-100">
+                <h5>LucasGamer</h5>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fs-5">
+                  Una experiencia increíble. La acción nunca para y el combate
+                  es brutal.
+                </p>
+              </div>
+            </div>
+
+            <!-- Comentario 2 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <div class="card comentario-card p-3 h-100">
+                <h5>MariaFPS</h5>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fs-5">
+                  Gráficos y sonido espectaculares. Muy recomendado si te gustan
+                  los shooters intensos.
+                </p>
+              </div>
+            </div>
+
+            <!-- Comentario 3 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <div class="card comentario-card p-3 h-100">
+                <h5>ProPlayerX</h5>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fs-5">
+                  Ritmo frenético, excelente jugabilidad y desafíos constantes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Botón volver -->
+      <div class="d-flex justify-content-center mb-4">
+       <button type="button" class="btn btn-gamer">
+            <a href="../index.html" class="nav-link">Volver atrás</a>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-3">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <h2 class="fw-bold">RESPAWN</h2>
+            <p>
+              Tu tienda gamer de confianza.<br />
+              Consolas, juegos y accesorios al mejor precio.
+            </p>
+
+            <ul class="list-unstyled">
+              <li><a href="#">Categorías</a></li>
+              <li><a href="./quienesSomos.html">Quiénes Somos</a></li>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="./paginaContacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider">
+            <h4 class="text-center">Seguinos</h4>
+             <div class="social-icons d-flex flex-row justify-content-center">
+              <a href="./error404.html" class="nav-link"><i class="bi bi-facebook"></i></a>
+              <a href="./error404.html" class="nav-link"><i class="bi bi-instagram"></i></a>
+              <a href="./error404.html" class="nav-link"><i class="bi bi-twitter-x"></i></a>
+              </div>
+          </div>
+
+          <!-- Columna 3 -->
+          <div class="col-12 col-md-4 col-lg-4 footer-divider text-center">
+            <h4>Contacto</h4>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i>
+              San Miguel de Tucumán, Argentina
+            </p>
+            <p>
+              <i class="bi bi-telephone-fill me-2"></i>
+              +54 381 000 0000
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i>
+              contacto@respawn.com
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center mt-3">
+          © 2026 Respawn - Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
+           <!-- Modal Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <!-- Imagen izquierda -->
+              <div class="col-md-6 d-none d-md-block">
+                <img
+                  src="../img/imagen login.png"
+                  alt="Login"
+                  class="img-fluid h-100 login-img"
+                />
+              </div>
+
+              <!-- Formulario -->
+              <div class="col-md-6 p-4">
+                <h4 class="mb-3 text-center">Iniciar Sesión</h4>
+
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Correo electrónico</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      required
+                      placeholder="Ingresa tu correo electronico"
+                      maxlength="100"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      required
+                      placeholder="Ingresa tu contraseña"
+                      minlength="8"
+                      maxlength="12"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-gamer w-100 mb-3"
+                  >
+                    Ingresar
+                  </button>
+
+                  <div class="text-center mb-3">
+                    <p class="small">Iniciar sesión con</p>
+                    <button type="button" class="btn btn-outline-danger me-2">
+                      <a href="./error404.html" class="nav-link">Google</a>
+                      
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                      <a href="./error404.html" class="nav-link">Facebook</a>
+                      
+                    </button>
+                  </div>
+
+                  <div class="text-center mt-3">
+                    <p class="small">
+                      ¿No tienes cuenta?
+                      <a href="./registro.html">Regístrate</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
